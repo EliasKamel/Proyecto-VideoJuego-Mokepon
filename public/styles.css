@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+body {
+    font-family: 'Bungee Inline', cursive;
+    background-color: 42855B;
+}
+
+
+#selecciona-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.titulo {
+    color:white;
+    font-size: 32 px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+.labels, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+width: 185px;
+height: 100px;
+background: #CC9C75;
+padding: 10px;
+box-sizing: border-box;
+margin: 10px;
+border-radius: 20px;
+display: flex;
+}
+
+.tarjeta-de-mokepon img {
+    width:80px;
+}
+
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: chartreuse;
+}
+
+#selecciona-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #CC9C75;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color:transparent;
+    color:white;
+    font-family: 'Bungee Inline', cursive;
+}
+
+
+#boton-mascota{
+    width: 150px;
+    height: 40px;
+    background:rgb(237, 178, 100);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 2px;
+    font-family: 'Bungee Inline', cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+
+    #mensajes{
+        width: 280px;
+        background:#CC9C75; 
+        padding: 20px;
+        margin-top:20px;
+        border-radius:20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #boton-reiniciar {
+        border: none;
+        color: #CC9C75;
+        font-family: 'Bungee Inline', cursive;
+    }
+
+    .ataques {
+        display: grid; 
+        grid-template-columns: 100px 100px; 
+    }
+
+    #ver-mapa {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center; 
+    }
+
+   #ver-mapa button {
+    width: 80px;
+    height: 40px;
+    background:rgb(237, 178, 100);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 2px;
+    font-family: 'Bungee Inline', cursive;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+   }
+  
+   @media (max-width: 360px) {
+   #ver-mapa div {
+                     display: flex;
+                     align-items: center;
+                     flex-direction: column;
+                }
+   }
+
+    @media (max-width: 360px) {
+        .labels, .tarjetas-ataques{
+            flex-direction: column;
+        }
+    }
